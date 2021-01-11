@@ -1,7 +1,10 @@
 class Main {
   public static void main(String[] args) {
-    System.out.println(dynamicFib(9));
+    final long startTime = System.currentTimeMillis();
+    System.out.println(dynamicFib(25));
+    final long endTime = System.currentTimeMillis();
     
+    System.out.println("Total execution time: " + (endTime - startTime));
   }
 
   public static int dynamicFib(int num) {
